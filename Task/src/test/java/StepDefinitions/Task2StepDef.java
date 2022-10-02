@@ -30,13 +30,13 @@ public class Task2StepDef {
     @And("select a seat")
     public void userSelectsASeat() throws InterruptedException {
         homePage.selectSeat(1).click();
-        System.out.println("ooooooook");
-        Thread.sleep(5000);
+
+        Thread.sleep(1000);
     }
 
     @And("Choose the boarding point and dropping point")
     public void chooseTheBoardingPointAndDroppingPoint() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         serrvicesPage.boardingPoint().click();
         serrvicesPage.firstOptionInDroppingPoint().click();
 
@@ -55,6 +55,6 @@ public class Task2StepDef {
     @And("Choose available seat\\( row{string} column {string})")
     public void chooseAvailableSeatRowColumn(String row, String column) throws InterruptedException {
         serrvicesPage.Seat(row,column).click();
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 }

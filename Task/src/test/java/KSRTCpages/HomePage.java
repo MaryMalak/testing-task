@@ -23,22 +23,7 @@ public class HomePage {
         return driver.findElement(By.id("txtJourneyDate"));
     }
     public void SetDateOfArrivalTxtLine( String day){
-       // DateOfArrivalTxtLine().click();
-
-//        WebElement Month =driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div/span[1]"));
-//
-//       // WebElement Year=driver.findElement(By.className("class=\"ui-datepicker-year\""));
-//        int j=0;
-//        while (true){
-//            //System.out.println(Month.getText());
-//            if (Month.getText().contains(month)| j>1 ) {
-//                break;
-//            }
-//            else {
-//                driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/a[2]")).click();
-//            }
-//            j+=1;
-//        }
+  
         List<WebElement> Days= driver.findElements(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td"));
         for (int i=0;i<Days.size();i++){
             if(Days.get(i).getText().contains(day)) {
@@ -49,7 +34,7 @@ public class HomePage {
     }
     public boolean secCarouselIsActive(){
         String ClassName=driver.findElement(By.xpath("//*[@id=\"routeSlider\"]/div/div[2]")).getAttribute("class") ;
-        System.out.println("className" +ClassName);
+
         if(ClassName.contains("active"))
             return true;
         else

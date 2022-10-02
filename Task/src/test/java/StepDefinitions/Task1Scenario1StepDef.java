@@ -25,7 +25,7 @@ public class Task1Scenario1StepDef {
     @And("User Selects the first Item from the results")
     public void userSelectsTheFirstItemFromTheResults() throws InterruptedException {
         searchPage.firstItemInTheResult().click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
     }
 

@@ -1,4 +1,6 @@
 @Task1
+@allTasks
+
 Feature:User could search and add any product to shopping cart
 
   Scenario: User could add products shopping cart
