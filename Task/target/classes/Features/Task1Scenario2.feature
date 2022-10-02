@@ -1,4 +1,5 @@
 @Task1
+@allTasks
 Feature:User could add any product from the discount part to shopping cart
   Scenario: User could add any product from the discount part to shopping cart
     When User opens today's deals
